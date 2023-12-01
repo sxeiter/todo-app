@@ -36,6 +36,10 @@ export const initEvents = () => {
   });
 
 
+  elements.resetBtn.addEventListener('click', () => {
+    elements.submitBtn.disabled = true;
+  })
+
   table.addEventListener('click', (e) => {
     const target = e.target;
     if (target === target.closest('.btn-danger')) {
